@@ -28,7 +28,10 @@ function App() {
         throw new Error("Invalid input format");
       }
 
-      const res = await axios.post("http://localhost:3000/bfhl", parsedInput);
+      const res = await axios.post(
+        "https://bfhl-assignemnt-backend.vercel.app/bfhl",
+        parsedInput
+      );
       setResponse(res.data);
     } catch (err) {
       setError(err.message);
@@ -64,7 +67,9 @@ function App() {
             onChange={(e) => setInput(e.target.value)}
             placeholder='Enter JSON input (e.g., {"data": ["A","1","B","2"]})'
           />
-          <button id="btn" type="submit">Submit</button>
+          <button id="btn" type="submit">
+            Submit
+          </button>
         </form>
       </div>
       {error && <p className="error">{error}</p>}

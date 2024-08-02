@@ -9,6 +9,9 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(bodyParser.json());
 
+app.get("/", (req, res) => {
+  res.json({ msg: "try endpoint /bfhl" });
+});
 // GET endpoint
 app.get("/bfhl", (req, res) => {
   res.status(200).json({ operation_code: 1 });
