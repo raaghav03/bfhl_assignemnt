@@ -1,0 +1,81 @@
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.input-section {
+  margin-bottom: 2rem;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.25s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.response-section {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-container {
+  margin-bottom: 1rem;
+}
+
+.multi-select {
+  width: 100%;
+}
+
+.filtered-response {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
